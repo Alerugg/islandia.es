@@ -1,0 +1,94 @@
+/* src/js/styles/allCategories.css */
+
+/* Contenedor principal */
+.all-categories-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    color: #fff; /* asumiendo body es azul oscuro */
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  
+  /* Filtros */
+  .filters-container {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .filter-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem; /* Espacio entre label e input */
+  }
+  
+  .filter-item label {
+    font-weight: bold;
+  }
+  
+  .filter-item input {
+    padding: 0.4rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  /* Grilla de cards */
+  .cards-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  }
+  
+  .category-card {
+    background-color: #ffffff;
+    color: #00264d;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+  }
+  .category-card:hover {
+    transform: scale(1.03);
+  }
+  .category-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+  .category-card h4 {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #d52b1e; /* Rojo Islandia */
+  }
+  .category-card p {
+    color: #475569;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Ajustes responsive */
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 1.5rem;
+    }
+    .category-card img {
+      height: 120px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .page-title {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+    .cards-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

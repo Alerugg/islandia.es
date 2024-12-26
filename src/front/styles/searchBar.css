@@ -1,0 +1,140 @@
+/* src/js/styles/searchBar.css */
+
+.search-bar {
+    background-color: #ffffff;
+    color: #0064a6;
+    padding: 2rem; 
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: -3rem auto 2rem auto; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 1.1rem; 
+  }
+  
+  .search-bar-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .tab {
+    background-color: #0064a6;
+    color: #ffffff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .tab.active {
+    background-color: #d52b1e; /* Rojo */
+  }
+  
+  .search-bar-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .form-input,
+  .form-select {
+    padding: 0.6rem 1rem;
+    border: 1px solid #a5b4fc;
+    border-radius: 5px;
+    font-size: 1rem;
+    min-width: 180px;
+  }
+  
+  .bigger {
+    font-size: 1.1rem;
+    padding: 0.8rem 1.2rem;
+  }
+  
+  .search-button {
+    background-color: #d52b1e;
+    color: #ffffff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .search-button:hover {
+    background-color: #0064a6;
+  }
+  
+  /* Resultados de la búsqueda */
+  .search-results {
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .search-results ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .search-result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .search-result-item button {
+    margin-left: 1rem;
+    background-color: #0064a6;
+    color: #fff;
+    border: none;
+    padding: 0.3rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .search-result-item button:hover {
+    background-color: #004080;
+  }
+  
+  /* -------------- Responsive -------------- */
+  @media (max-width: 768px) {
+    .search-bar {
+      padding: 1.5rem;
+      margin: -2rem auto 2rem auto; 
+    }
+    .search-bar-form {
+      gap: 0.5rem;
+    }
+    .search-button {
+      padding: 0.5rem 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-bar {
+      font-size: 1rem;
+      padding: 1rem;
+      margin: -2rem auto 1.5rem auto;
+    }
+  
+    .tab {
+      padding: 0.6rem 1rem;
+      font-size: 0.9rem;
+    }
+  
+    .search-results {
+      font-size: 0.95rem;
+    }
+  }
+  

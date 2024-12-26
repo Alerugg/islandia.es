@@ -1,0 +1,104 @@
+/* src/js/styles/checkout.css */
+
+.checkout-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    background-color: #fff;
+    color: #00264d;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  
+  .checkout-title {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #d52b1e; /* Rojo Islandia */
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  /* Mensaje cuando está vacío */
+  .empty-msg {
+    text-align: center;
+    color: #475569;
+  }
+  
+  /* Tabla */
+  .checkout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+    text-align: left;
+  }
+  
+  .checkout-table thead {
+    background-color: #0061a8; /* Azul Islandia */
+    color: #fff;
+  }
+  
+  .checkout-table th, 
+  .checkout-table td {
+    padding: 0.8rem;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .remove-btn {
+    background-color: transparent;
+    border: none;
+    color: #d52b1e;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+  
+  .remove-btn:hover {
+    color: #b71c1c;
+  }
+  
+  /* Resumen */
+  .checkout-summary {
+    text-align: right;
+  }
+  
+  .summary-text {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+  }
+  
+  /* Botón pagar */
+  .pay-btn {
+    background-color: #d52b1e;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-btn:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .checkout-table thead {
+      font-size: 0.9rem;
+    }
+    .checkout-table td {
+      font-size: 0.9rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .checkout-container {
+      margin: 1rem;
+      padding: 1rem;
+    }
+    .checkout-table th, .checkout-table td {
+      padding: 0.5rem;
+    }
+  }
+  

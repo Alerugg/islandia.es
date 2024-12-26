@@ -4,4 +4,234 @@
     All pages share the styles on index.css but you should create 
     one more css for each page that will contain the selected used 
     on that page only (the ones not reused in other pages).
-*/
+*//* src/js/styles/home.css */
+
+/* Banner */
+.home-banner {
+    background: url("https://oscarg90.sg-host.com/wp-content/uploads/2024/07/20230702_130640-scaled.jpg")
+      no-repeat center center/cover;
+    text-align: center;
+    padding: 5rem 2rem;
+    color: #ffffff;
+    border-bottom: 4px solid #d52b1e; /* Rojo*/
+  }
+  
+  .banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .banner-content p {
+    font-size: 1.2rem;
+  }
+  
+  /* Main container */
+  .main-home-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  /* Category section */
+  .home-category-section {
+    margin-bottom: 3rem;
+  }
+  
+  .home-category-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  /* Cards container */
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Card */
+  .card {
+    background-color: #ffffff;
+    color: #00264d;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: scale(1.03);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    padding: 1rem;
+  }
+  
+  .card-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #d52b1e;
+  }
+  
+  .card-body p {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    color: #475569;
+  }
+  
+  .card-body button {
+    background-color: #0061a8;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .card-body button:hover {
+    background-color: #004080;
+  }
+  
+  /* Fondo azul oscuro en todo el body */
+  body {
+    background-color: #0061a8; /* Azul oscuro Islandia */
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: "Comic Neue", sans-serif; /* Ajusta si usas otra */
+  }
+  
+  /* Sección "personalized-section" */
+  .personalized-section {
+    background-color: rgba(0,0,0,0.2);
+    color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .personalized-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .personalized-section p {
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Formulario */
+  .personalized-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 0.3rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .btn-personalized {
+    background-color: #d52b1e;
+    color: #fff;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .btn-personalized:hover {
+    background-color: #b71c1c;
+  }
+  
+  /* Mensaje de envío */
+  .send-status {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #34d399; /* Verde */
+  }
+  
+  /* -------------- Responsive -------------- */
+  
+  /* Tablet y móviles medianos */
+  @media (max-width: 768px) {
+    .banner-content h1 {
+      font-size: 2rem;
+    }
+    .banner-content p {
+      font-size: 1rem;
+    }
+    .cards-container {
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .personalized-section h2 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  /* Móviles pequeños */
+  @media (max-width: 480px) {
+    .banner-content {
+      padding: 0 1rem;
+    }
+    .banner-content h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .banner-content p {
+      font-size: 0.95rem;
+    }
+    .cards-container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .personalized-section h2 {
+      font-size: 1.3rem;
+    }
+  }
+
+  body{
+    background-color: #0061a8;
+  }
+
+  .btn-icelandic-red {
+    background-color: #d52b1e; /* Rojo Islandia */
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; 
+    font-weight: bold;
+    display: inline-block; /* para comportarse como button */
+    transition: background-color 0.3s ease;
+  }
+  .btn-icelandic-red:hover {
+    background-color: #b71c1c; /* un tono más oscuro */
+  }
